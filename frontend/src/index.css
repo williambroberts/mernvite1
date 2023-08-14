@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+form {
+  width: min(400px,95vw);
+  @apply flex flex-col gap-4
+}
+input {
+  @apply bg-sky-400
+}
+
+label {
+  @apply text-base font-bold text-sky-800
+}
+button {
+  @apply bg-slate-950 text-white
+}
