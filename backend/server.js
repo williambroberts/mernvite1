@@ -52,8 +52,8 @@ app.post("/login",asyncHandler(async(req,res)=>{
     }
 
 }))
-app.use(notFound)
-app.use(errorHandler)
+// app.use(notFound)
+// app.use(errorHandler)
 app.listen(port,()=>{
     console.log(`server running on port ${port}`)
 })
