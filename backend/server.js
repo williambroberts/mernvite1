@@ -33,7 +33,7 @@ app.get("/login",(req,res)=>{
 
 app.post("/login",asyncHandler(async(req,res)=>{
     const {email,password} = req.body
-    const User = await UserModel.findOne({email})
+    const User = await UserModel.findOne({email})   
     if (!User){
         res.status(400)
         throw new Error(`User doesnt exist`)
